@@ -9,5 +9,6 @@ namespace MyEcommerceApp.App.Products
 {
     public interface IProductStore : ITransientDependency
     {
+        Task<Guid> CreateAsync(Product product);
     }
 }
